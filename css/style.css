@@ -1,4 +1,115 @@
-main,
+body {
+  margin: 0;
+  font-family: serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  background-color: #0d1c45;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 60px;
+}
+
+main {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  background-color: yellow;
+  width: 100px;
+  padding: 20px 10px;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  color: blue;
+}
+
+.sidebar nav ul {
+  padding-left: 40px;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+  color: blue;
+}
+
+.content {
+  background-color: cyan;
+  flex: 1;
+}
+
+.content h1 {
+  font-size: 1.5em;
+}
+
+.content img {
+  width: 100%;
+  height: auto;
+}
+
+.content #about + p {
+  color: white;
+  background-color: black;
+}
+
+.content #services + p {
+  color: white;
+  background-color: green;
+}
+
+.content ul {
+  margin-left: 20px;
+}
+
+.content ul li {
+  margin-bottom: 10px;
+}
+
+#services ~ p + ul li {
+  list-style: circle;
+}
+
+#services ~ p + ul li:nth-child(2n) {
+  color: red;
+}
+
+#contact ~ ul li a {
+  color: red;
+}
+
 footer {
   display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+}
+
+footer > div {
+  flex: 1;
+}
+
+footer > div:first-child {
+  background-color: pink;
+}
+
+footer > div:nth-child(2) {
+  color: white;
+  background-color: brown;
+}
+
+footer > div:last-child {
+  background-color: gray;
 }
